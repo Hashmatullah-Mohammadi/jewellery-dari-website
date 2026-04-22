@@ -1,0 +1,152 @@
+/* RTL Support for Dari Language */
+
+/* Base RTL styles */
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Navigation RTL adjustments - Logo on left, Menu on right using justify-content-between */
+.custom_nav-container {
+  direction: rtl;
+  justify-content: space-between !important;
+}
+
+.navbar-brand {
+  margin-right: 0;
+  margin-left: auto;
+  order: 1;
+}
+
+.navbar-nav {
+  direction: rtl;
+  margin: 0;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.ml-auto {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.d-flex {
+  justify-content: space-between !important;
+}
+
+/* Content alignment */
+.heading_container h2::before {
+  left: auto;
+  right: -15px;
+}
+
+.detail-box, .price_container, .item_container {
+  text-align: right;
+}
+
+/* Form RTL styles */
+.form-control {
+  text-align: right;
+  direction: rtl;
+}
+
+input[type="text"], input[type="email"], textarea {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Footer RTL styles */
+.info_contact {
+  text-align: right;
+}
+
+.info_logo span {
+  text-align: right;
+}
+
+/* Button and link adjustments */
+.btn, .nav-link {
+  text-align: center;
+}
+
+/* Carousel RTL */
+.carousel-control-prev {
+  left: auto;
+  right: 15px;
+}
+
+.carousel-control-next {
+  right: auto;
+  left: 15px;
+}
+
+/* Price and item boxes */
+.box {
+  text-align: center;
+}
+
+.price h6, .name h5 {
+  text-align: center;
+}
+
+/* Social media icons */
+.social_box {
+  direction: ltr; /* Keep social media icons LTR */
+}
+
+/* Newsletter form */
+.email_box label {
+  text-align: right;
+  display: block;
+}
+
+/* Responsive RTL adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: right;
+  }
+  
+  .info_container .row {
+    direction: rtl;
+  }
+}
+
+/* Dari font improvements */
+body {
+  font-family: "Poppins", "Tahoma", "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", "Tahoma", "Arial", sans-serif;
+  font-weight: 600;
+}
+
+/* Ensure proper spacing for RTL text */
+p {
+  text-align: right;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* List items RTL */
+ul.navbar-nav {
+  padding-right: 0;
+}
+
+.navbar-nav li {
+  float: right;
+}
+
+/* Contact form RTL */
+.contact_section form {
+  text-align: right;
+}
+
+.message-box {
+  text-align: right;
+  direction: rtl;
+}
