@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title> صفحه ورود </title>
+
+    <!-- slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"
+    />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Poppins:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <!-- RTL support for Dari -->
+    <link href="css/dari-rtl.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/advanced-dari-login.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+      /* Sticky Header with Gold Background */
+      .header_section {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 1000 !important;
+        background: linear-gradient(135deg,#fb930a 3%, #f5e47b 32%,#fb930a 65% ) !important;
+        box-shadow: 0 4px 20px rgba(251, 147, 10, 0.3) !important;
+      }
+      
+      /* Add padding to body to account for fixed header */
+
+      
+      /* Update navbar brand text for gold background */
+      .navbar-brand span {
+        color: white !important;
+        font-weight: 600 !important;
+      }
+      
+      /* Update navigation links for gold background */
+      .navbar-nav .nav-link {
+        color: white !important;
+        font-weight: 500 !important;
+        transition: all 0.3s ease !important;
+      }
+      
+      .navbar-nav .nav-link:hover {
+        color: #fffacd !important;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5) !important;
+      }
+      
+      .navbar-nav .nav-item.active .nav-link {
+        color: white !important;
+        font-weight: 600 !important;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.7) !important;
+      }
+      
+      /* Update cart icon for gold background */
+      .quote_btn-container a img {
+        filter: brightness(0) invert(1) !important;
+      }
+      
+      /* Update search button for gold background */
+      .nav_search-btn {
+        
+        color: #fb930a !important;
+      }
+      
+      .login-container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/04/14/1776140257009_7.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 20px;
+        position: relative;
+      }
+
+      .login-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(251, 147, 10, 0.1) 0%, rgba(245, 228, 123, 0.1) 100%);
+        z-index: 1;
+      }
+
+      .login-form-wrapper {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        width: 100%;
+        max-width: 450px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .login-header {
+        background: linear-gradient(135deg, #fb930a 0%, #f5e47b 100%);
+        padding: 30px;
+        text-align: center;
+        position: relative;
+      }
+
+      .login-header h2 {
+        color: white;
+        font-weight: 600;
+        margin: 0;
+        font-size: 28px;
+      }
+
+      .login-header .logo {
+        width: 60px;
+        height: 60px;
+        background: white;
+        border-radius: 50%;
+        margin: 0 auto 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .login-header .logo img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .login-body {
+        padding: 40px 30px;
+      }
+
+      .form-group {
+        margin-bottom: 25px;
+        position: relative;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #333;
+        font-size: 14px;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 15px;
+        transition: all 0.3s ease;
+        background: #fafafa;
+      }
+
+      .form-group input:focus {
+        outline: none;
+        border-color: #fb930a;
+        background: white;
+        box-shadow: 0 0 0 3px rgba(251, 147, 10, 0.1);
+      }
+
+      .form-group .input-icon {
+        position: absolute;
+        left: 15px;
+        top: 42px;
+        color: #999;
+      }
+
+      .remember-forgot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .remember-me {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .remember-me input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        accent-color: #fb930a;
+      }
+
+      .forgot-password {
+        color: #fb930a;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s ease;
+      }
+
+      .forgot-password:hover {
+        color: #f5e47b;
+        text-decoration: underline;
+      }
+
+      .login-btn {
+        width: 100%;
+        padding: 14px;
+        background: linear-gradient(135deg, #fb930a 0%, #f5e47b 100%);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-bottom: 20px;
+      }
+
+      .login-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(251, 147, 10, 0.3);
+      }
+
+      .login-btn:active {
+        transform: translateY(0);
+      }
+
+      .divider {
+        text-align: center;
+        margin: 25px 0;
+        position: relative;
+      }
+
+      .divider::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        height: 1px;
+        background: #e0e0e0;
+      }
+
+      .divider span {
+        background: white;
+        padding: 0 15px;
+        color: #999;
+        font-size: 14px;
+        position: relative;
+      }
+
+      .social-login {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 25px;
+      }
+
+      .social-btn {
+        flex: 1;
+        padding: 10px;
+        border: 2px solid #e0e0e0;
+        background: white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 14px;
+        color: #333;
+      }
+
+      .social-btn:hover {
+        border-color: #fb930a;
+        background: #fafafa;
+      }
+
+      .signup-link {
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+      }
+
+      .signup-link a {
+        color: #fb930a;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .signup-link a:hover {
+        text-decoration: underline;
+      }
+
+      .back-to-home {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .back-to-home a {
+        color: #666;
+        text-decoration: none;
+        font-size: 14px;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        transition: color 0.3s ease;
+      }
+
+      .back-to-home a:hover {
+        color: #fb930a;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 576px) {
+        .login-form-wrapper {
+          max-width: 100%;
+          margin: 0 10px;
+        }
+
+        .login-body {
+          padding: 30px 20px;
+        }
+
+        .login-header {
+          padding: 25px 20px;
+        }
+
+        .login-header h2 {
+          font-size: 24px;
+        }
+
+        .social-login {
+          flex-direction: column;
+        }
+
+        .remember-forgot {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 15px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .login-container {
+          padding: 10px;
+        }
+
+        .login-body {
+          padding: 25px 15px;
+        }
+
+        .form-group input {
+          padding: 10px 12px;
+        }
+
+        .login-btn {
+          padding: 12px;
+          font-size: 15px;
+        }
+      }
+
+      /* Tablet Styles */
+      @media (min-width: 577px) and (max-width: 768px) {
+        .login-form-wrapper {
+          max-width: 400px;
+        }
+      }
+
+      /* Animation for form appearance */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .login-form-wrapper {
+        animation: fadeInUp 0.6s ease-out;
+      }
+
+      /* Error and Success States */
+      .form-group.error input {
+        border-color: #e74c3c;
+        background: #fdf2f2;
+      }
+
+      .form-group.success input {
+        border-color: #27ae60;
+        background: #f2fdf7;
+      }
+
+      .error-message {
+        color: #e74c3c;
+        font-size: 12px;
+        margin-top: 5px;
+        display: none;
+      }
+
+      .form-group.error .error-message {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span> توانا </span>
+            <img src="images/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              class="d-flex ml-auto flex-column flex-lg-row align-items-center"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">صفحه اصلی</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> درباره ما</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="jewellery.html">طلاجات </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">تماس با ما</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="login.html"
+                    >ورود <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="register.html">ثبت نام</a>
+                </li>
+              </ul>
+            </div>
+            <div class="quote_btn-container">
+              <a href="cart.html">
+                <img src="images/cart.png" alt="" />
+                <div class="cart_number">0</div>
+              </a>
+              <form class="form-inline">
+                <button
+                  class="btn my-2 my-sm-0 nav_search-btn"
+                  type="submit"
+                ></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <div class="login-container">
+      <div class="login-form-wrapper">
+        <div class="login-header">
+          <div class="logo">
+            <img src="images/logo.png" alt="لوگو توانا" />
+          </div>
+          <h2>ورود به حساب کاربری</h2>
+        </div>
+
+        <div class="login-body">
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="email">آدرس ایمیل / شماره موبایل</label>
+              <input 
+                type="text" 
+                id="email" 
+                name="email" 
+                placeholder="ایمیل یا شماره موبایل خود را وارد کنید"
+                required
+              >
+              <span class="input-icon"><i class="fas fa-user"></i></span>
+              <div class="error-message">لطفاً ایمیل یا شماره موبایل صحیح را وارد کنید</div>
+            </div>
+
+            <div class="form-group">
+              <label for="password">کلمه عبور</label>
+              <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="کلمه عبور خود را وارد کنید"
+                required
+              >
+              <span class="input-icon"><i class="fas fa-lock"></i></span>
+              <div class="error-message">لطفاً کلمه عبور را وارد کنید</div>
+            </div>
+
+            <div class="remember-forgot">
+              <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">مرا به خاطر بسپار</label>
+              </div>
+              <a href="#" class="forgot-password">کلمه عبور را فراموش کرده‌اید؟</a>
+            </div>
+
+            <button type="submit" class="login-btn">ورود</button>
+          </form>
+
+          <div class="divider">
+            <span>یا</span>
+          </div>
+
+          <div class="social-login">
+            <button class="social-btn facebook">
+              <i class="fab fa-facebook-f"></i>
+              فیسبوک
+            </button>
+            <button class="social-btn google">
+              <i class="fab fa-google"></i>
+              گوگل
+            </button>
+          </div>
+
+          <div class="signup-link">
+            حساب کاربری ندارید؟ <a href="register.html">ثبت نام کنید</a>
+          </div>
+
+          <div class="back-to-home">
+            <a href="index.html">
+              <i class="fas fa-arrow-right"></i>
+              بازگشت به صفحه اصلی
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+    <script>
+      $(document).ready(function() {
+        // Form validation
+        $('#loginForm').on('submit', function(e) {
+          e.preventDefault();
+          
+          // Reset previous errors
+          $('.form-group').removeClass('error');
+          
+          let isValid = true;
+          
+          // Email validation
+          const email = $('#email').val().trim();
+          if (!email) {
+            $('#email').closest('.form-group').addClass('error');
+            isValid = false;
+          } else {
+            $('#email').closest('.form-group').addClass('success');
+          }
+          
+          // Password validation
+          const password = $('#password').val();
+          if (!password || password.length < 6) {
+            $('#password').closest('.form-group').addClass('error');
+            isValid = false;
+          } else {
+            $('#password').closest('.form-group').addClass('success');
+          }
+          
+          if (isValid) {
+            // Simulate login process
+            $('.login-btn').text('در حال ورود...');
+            $('.login-btn').prop('disabled', true);
+            $('.login-btn').addClass('loading');
+            
+            setTimeout(function() {
+              alert('ورود با موفقیت انجام شد! در حال انتقال به صفحه اصلی.');
+              window.location.href = 'index.html';
+            }, 2000);
+          }
+        });
+        
+        // Remove error state on input
+        $('input').on('input', function() {
+          $(this).closest('.form-group').removeClass('error');
+        });
+        
+        // Social login handlers
+        $('.social-btn').on('click', function() {
+          const platform = $(this).text().trim();
+          alert(`ورود با ${platform} به زودی در دسترس خواهد بود.`);
+        });
+        
+        // Forgot password handler
+        $('.forgot-password').on('click', function(e) {
+          e.preventDefault();
+          alert('بازیابی کلمه عبور به زودی در دسترس خواهد بود.');
+        });
+
+        // Add input focus effects
+        $('input').on('focus', function() {
+          $(this).closest('.form-group').addClass('focused');
+        });
+
+        $('input').on('blur', function() {
+          $(this).closest('.form-group').removeClass('focused');
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title> صفحه ثبت نام | جواهرات توانا</title>
+
+    <!-- slider stylesheet -->
+    <link
+      rel="stylesheet" 
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"
+    />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Poppins:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <!-- RTL support for Dari -->
+    <link href="css/dari-rtl.css" rel="stylesheet" />
+
+    <style>
+      /* Sticky Header with Gold Background */
+      .header_section {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 1000 !important;
+        background: linear-gradient(135deg,#fb930a 3%, #f5e47b 32%,#fb930a 65% ) !important;
+        box-shadow: 0 4px 20px rgba(251, 147, 10, 0.3) !important;
+      }
+
+      /* Update navbar brand text for gold background */
+      .navbar-brand span {
+        color: white !important;
+        font-weight: 600 !important;
+      }
+      
+      /* Update navigation links for gold background */
+      .navbar-nav .nav-link {
+        color: white !important;
+        font-weight: 500 !important;
+        transition: all 0.3s ease !important;
+      }
+      
+      .navbar-nav .nav-link:hover {
+        color: #fffacd !important;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5) !important;
+      }
+      
+      .navbar-nav .nav-item.active .nav-link {
+        color: white !important;
+        font-weight: 600 !important;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.7) !important;
+      }
+      
+      /* Update cart icon for gold background */
+      .quote_btn-container a img {
+        filter: brightness(0) invert(1) !important;
+      }
+      
+      /* Update search button for gold background */
+      .nav_search-btn {
+        
+        color: #fff !important;
+      }
+
+      .register-container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://haghanigold.com/wp-content/uploads/2023/10/image3-17.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 20px;
+        position: relative;
+      }
+
+      .register-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(251, 147, 10, 0.1) 0%, rgba(245, 228, 123, 0.1) 100%);
+        z-index: 1;
+      }
+
+      .register-form-wrapper {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        width: 100%;
+        max-width: 500px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .register-header {
+        background: linear-gradient(135deg, #fb930a 0%, #f5e47b 100%);
+        padding: 30px;
+        text-align: center;
+        position: relative;
+      }
+
+      .register-header h2 {
+        color: white;
+        font-weight: 600;
+        margin: 0;
+        font-size: 28px;
+      }
+
+      .register-header .logo {
+        width: 60px;
+        height: 60px;
+        background: white;
+        border-radius: 50%;
+        margin: 0 auto 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .register-header .logo img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .register-body {
+        padding: 40px 30px;
+        max-height: 70vh;
+        overflow-y: auto;
+      }
+
+      .form-row {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+
+      .form-row .form-group {
+        flex: 1;
+        margin-bottom: 0;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #333;
+        font-size: 14px;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 15px;
+        transition: all 0.3s ease;
+        background: #fafafa;
+      }
+
+      .form-group input:focus {
+        outline: none;
+        border-color: #fb930a;
+        background: white;
+        box-shadow: 0 0 0 3px rgba(251, 147, 10, 0.1);
+      }
+
+      .form-group select {
+        width: 100%;
+        padding: 12px 15px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 15px;
+        transition: all 0.3s ease;
+        background: #fafafa;
+        cursor: pointer;
+      }
+
+      .form-group select:focus {
+        outline: none;
+        border-color: #fb930a;
+        background: white;
+        box-shadow: 0 0 0 3px rgba(251, 147, 10, 0.1);
+      }
+
+      .form-group .input-icon {
+        position: absolute;
+        left: 15px;
+        top: 42px;
+        color: #999;
+      }
+
+      .password-strength {
+        margin-top: 8px;
+        height: 4px;
+        background: #e0e0e0;
+        border-radius: 2px;
+        overflow: hidden;
+      }
+
+      .password-strength-bar {
+        height: 100%;
+        width: 0;
+        transition: all 0.3s ease;
+        border-radius: 2px;
+      }
+
+      .password-strength-bar.weak {
+        width: 33%;
+        background: #e74c3c;
+      }
+
+      .password-strength-bar.medium {
+        width: 66%;
+        background: #f39c12;
+      }
+
+      .password-strength-bar.strong {
+        width: 100%;
+        background: #27ae60;
+      }
+
+      .terms-conditions {
+        margin-bottom: 25px;
+      }
+
+      .terms-checkbox {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .terms-checkbox input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        accent-color: #fb930a;
+        margin-top: 2px;
+      }
+
+      .terms-checkbox label {
+        margin-bottom: 0;
+        font-size: 13px;
+        line-height: 1.5;
+        color: #666;
+      }
+
+      .terms-checkbox a {
+        color: #fb930a;
+        text-decoration: none;
+      }
+
+      .terms-checkbox a:hover {
+        text-decoration: underline;
+      }
+
+      .register-btn {
+        width: 100%;
+        padding: 14px;
+        background: linear-gradient(135deg, #fb930a 0%, #f5e47b 100%);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-bottom: 20px;
+      }
+
+      .register-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(251, 147, 10, 0.3);
+      }
+
+      .register-btn:active {
+        transform: translateY(0);
+      }
+
+      .divider {
+        text-align: center;
+        margin: 25px 0;
+        position: relative;
+      }
+
+      .divider::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        height: 1px;
+        background: #e0e0e0;
+      }
+
+      .divider span {
+        background: white;
+        padding: 0 15px;
+        color: #999;
+        font-size: 14px;
+        position: relative;
+      }
+
+      .social-register {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 25px;
+      }
+
+      .social-btn {
+        flex: 1;
+        padding: 10px;
+        border: 2px solid #e0e0e0;
+        background: white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 14px;
+        color: #333;
+      }
+
+      .social-btn:hover {
+        border-color: #fb930a;
+        background: #fafafa;
+      }
+
+      .login-link {
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+      }
+
+      .login-link a {
+        color: #fb930a;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .login-link a:hover {
+        text-decoration: underline;
+      }
+
+      .back-to-home {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .back-to-home a {
+        color: #666;
+        text-decoration: none;
+        font-size: 14px;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        transition: color 0.3s ease;
+      }
+
+      .back-to-home a:hover {
+        color: #fb930a;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 576px) {
+        .register-form-wrapper {
+          max-width: 100%;
+          margin: 0 10px;
+        }
+
+        .register-body {
+          padding: 30px 20px;
+        }
+
+        .register-header {
+          padding: 25px 20px;
+        }
+
+        .register-header h2 {
+          font-size: 24px;
+        }
+
+        .form-row {
+          flex-direction: column;
+          gap: 0;
+        }
+
+        .form-row .form-group {
+          margin-bottom: 20px;
+        }
+
+        .social-register {
+          flex-direction: column;
+        }
+
+        .terms-checkbox {
+          align-items: flex-start;
+        }
+
+        .terms-checkbox label {
+          font-size: 12px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .register-container {
+          padding: 10px;
+        }
+
+        .register-body {
+          padding: 25px 15px;
+        }
+
+        .form-group input,
+        .form-group select {
+          padding: 10px 12px;
+        }
+
+        .register-btn {
+          padding: 12px;
+          font-size: 15px;
+        }
+      }
+
+      /* Tablet Styles */
+      @media (min-width: 577px) and (max-width: 768px) {
+        .register-form-wrapper {
+          max-width: 450px;
+        }
+      }
+
+      /* Animation for form appearance */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .register-form-wrapper {
+        animation: fadeInUp 0.6s ease-out;
+      }
+
+      /* Error and Success States */
+      .form-group.error input,
+      .form-group.error select {
+        border-color: #e74c3c;
+        background: #fdf2f2;
+      }
+
+      .form-group.success input,
+      .form-group.success select {
+        border-color: #27ae60;
+        background: #f2fdf7;
+      }
+
+      .error-message {
+        color: #e74c3c;
+        font-size: 12px;
+        margin-top: 5px;
+        display: none;
+      }
+
+      .form-group.error .error-message {
+        display: block;
+      }
+
+      .success-message {
+        color: #27ae60;
+        font-size: 12px;
+        margin-top: 5px;
+        display: none;
+      }
+
+      .form-group.success .success-message {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span> توانا </span>
+            <img src="images/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="#navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              class="d-flex ml-auto flex-column flex-lg-row align-items-center"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">صفحه اصلی</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">درباره ما</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="jewellery.html">طلاجات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">تماس با ما</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">ورود</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="register.html">ثبت نام</a>
+                </li>
+              </ul>
+            </div>
+            <div class="quote_btn-container ">
+              <a href="cart.html">
+                <img src="images/cart.png" alt="">
+                <div class="cart_number">
+                  0
+                </div>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <div class="register-container">
+      <div class="register-form-wrapper">
+        <div class="register-header">
+          <div class="logo">
+            <img src="images/logo.png" alt="توانا">
+          </div>
+          <h2> ایجاد حساب جدید</h2>
+        </div>
+        
+        <div class="register-body">
+          <form id="registerForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">نام</label>
+                <input 
+                  type="text" 
+                  id="firstName" 
+                  name="firstName" 
+                  placeholder="نام خود را وارد کنید"
+                  required
+                >
+                <div class="error-message">لطفاً نام خود را وارد کنید</div>
+              </div>
+              <div class="form-group">
+                <label for="lastName">نام خانوادگی</label>
+                <input 
+                  type="text" 
+                  id="lastName" 
+                  name="lastName" 
+                  placeholder="نام خانوادگی خود را وارد کنید"
+                  required
+                >
+                <div class="error-message">لطفاً نام خانوادگی خود را وارد کنید</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">ایمیل</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="ایمیل خود را وارد کنید"
+                required
+              >
+              <div class="error-message">لطفاً ایمیل معتبر وارد کنید</div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">شماره موبایل</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                placeholder="شماره موبایل خود را وارد کنید"
+                pattern="[0-9]{10}"
+                required
+              >
+              <div class="error-message">لطفاً شماره موبایل معتبر وارد کنید</div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="password">رمز عبور</label>
+                <input 
+                  type="password" 
+                  id="password" 
+                  name="password" 
+                  placeholder="رمز عبور خود را وارد کنید"
+                  required
+                >
+                <div class="password-strength">
+                  <div class="password-strength-bar"></div>
+                </div>
+                <div class="error-message">رمز عبور باید حداقل ۶ کاراکتر باشد</div>
+              </div>
+              <div class="form-group">
+                <label for="confirmPassword">تکرار رمز عبور</label>
+                <input 
+                  type="password" 
+                  id="confirmPassword" 
+                  name="confirmPassword" 
+                  placeholder="رمز عبور را تکرار کنید"
+                  required
+                >
+                <div class="error-message">رمز عبورها مطابقت ندارند</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="city">شهر</label>
+              <select id="city" name="city" required>
+                <option value="">شهر خود را انتخاب کنید</option>
+                <option value="kabul">کابل</option>
+                <option value="herat">هرات</option>
+                <option value="mazar">مزار شریف</option>
+                <option value="kandahar">قندهار</option>
+                <option value="jalalabad">جلال آباد</option>
+                <option value="other">سایر</option>
+              </select>
+              <div class="error-message">لطفاً شهر خود را انتخاب کنید</div>
+            </div>
+
+            <div class="terms-conditions">
+              <div class="terms-checkbox">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">
+                  با ثبت نام، شما <a href="#">شرایط استفاده</a> و <a href="#">حریم خصوصی</a> ما را می پذیرید
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="register-btn">ایجاد حساب</button>
+          </form>
+
+          <div class="divider">
+            <span>یا</span>
+          </div>
+
+          <div class="social-register">
+            <button class="social-btn">
+              <span>f</span>
+              Facebook
+            </button>
+            <button class="social-btn">
+              <span>G</span>
+              Google
+            </button>
+          </div>
+
+          <div class="login-link">
+            حساب کاربری دارید؟ <a href="login.html">ورود</a>
+          </div>
+
+          <div class="back-to-home">
+            <a href="index.html">
+              ← بازگشت به صفحه اصلی
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+    <script>
+      $(document).ready(function() {
+        // Password strength checker
+        $('#password').on('input', function() {
+          const password = $(this).val();
+          const strengthBar = $('.password-strength-bar');
+          
+          if (password.length === 0) {
+            strengthBar.removeClass('weak medium strong');
+            return;
+          }
+          
+          let strength = 0;
+          if (password.length >= 6) strength++;
+          if (password.length >= 10) strength++;
+          if (/[a-z]/.test(password) && /[A-Z]/.test(password)) strength++;
+          if (/[0-9]/.test(password)) strength++;
+          if (/[^a-zA-Z0-9]/.test(password)) strength++;
+          
+          strengthBar.removeClass('weak medium strong');
+          if (strength <= 2) {
+            strengthBar.addClass('weak');
+          } else if (strength <= 4) {
+            strengthBar.addClass('medium');
+          } else {
+            strengthBar.addClass('strong');
+          }
+        });
+
+        // Form validation
+        $('#registerForm').on('submit', function(e) {
+          e.preventDefault();
+          
+          // Reset previous errors
+          $('.form-group').removeClass('error');
+          
+          let isValid = true;
+          
+          // First name validation
+          const firstName = $('#firstName').val().trim();
+          if (!firstName) {
+            $('#firstName').closest('.form-group').addClass('error');
+            isValid = false;
+          } else {
+            $('#firstName').closest('.form-group').addClass('success');
+          }
+          
+          // Last name validation
+          const lastName = $('#lastName').val().trim();
+          if (!lastName) {
+            $('#lastName').closest('.form-group').addClass('error');
+            isValid = false;
+          } else {
+            $('#lastName').closest('.form-group').addClass('success');
+          }
+          
+          // Email validation
+          const email = $('#email').val().trim();
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!email || !emailRegex.test(email)) {
+            $('#email').closest('.form-group').addClass('error');
+            isValid = false;
+          } else {
+            $('#email').closest('.form-group').addClass('success');
+          }
+          
+          // Phone validation
+          const phone = $('#phone').val().trim();
+          const phoneRegex = /^[0-9]{10}$/;
+          if (!phone || !phoneRegex.test(phone)) {
+            $('#phone').closest('.form-group').addClass('error');
+            isValid = false;
+          } else {
+            $('#phone').closest('.form-group').addClass('success');
+          }
+          
+          // Password validation
+          const password = $('#password').val();
+          if (!password || password.length < 6) {
+            $('#password').closest('.form-group').addClass('error');
+            isValid = false;
+          } else {
+            $('#password').closest('.form-group').addClass('success');
+          }
+          
+          // Confirm password validation
+          const confirmPassword = $('#confirmPassword').val();
+          if (!confirmPassword || password !== confirmPassword) {
+            $('#confirmPassword').closest('.form-group').addClass('error');
+            isValid = false;
+          } else {
+            $('#confirmPassword').closest('.form-group').addClass('success');
+          }
+          
+          // City validation
+          const city = $('#city').val();
+          if (!city) {
+            $('#city').closest('.form-group').addClass('error');
+            isValid = false;
+          } else {
+            $('#city').closest('.form-group').addClass('success');
+          }
+          
+          // Terms validation
+          const terms = $('#terms').is(':checked');
+          if (!terms) {
+            alert('لطفاً شرایط استفاده را بپذیرید');
+            isValid = false;
+          }
+          
+          if (isValid) {
+            // Simulate registration process
+            $('.register-btn').text('در حال ثبت نام...');
+            $('.register-btn').prop('disabled', true);
+            
+            setTimeout(function() {
+              alert('ثبت نام با موفقیت انجام شد! شما به صفحه ورود هدایت می شوید.');
+              window.location.href = 'login.html';
+            }, 2000);
+          }
+        });
+        
+        // Remove error state on input
+        $('input, select').on('input', function() {
+          $(this).closest('.form-group').removeClass('error');
+        });
+        
+        // Social register handlers
+        $('.social-btn').on('click', function() {
+          const platform = $(this).text().trim();
+          alert(`ثبت نام با ${platform} به زودی در دسترس خواهد بود.`);
+        });
+        
+        // Real-time password confirmation
+        $('#confirmPassword').on('input', function() {
+          const password = $('#password').val();
+          const confirmPassword = $(this).val();
+          
+          if (confirmPassword && password !== confirmPassword) {
+            $(this).closest('.form-group').addClass('error');
+          } else if (confirmPassword && password === confirmPassword) {
+            $(this).closest('.form-group').removeClass('error').addClass('success');
+          } else {
+            $(this).closest('.form-group').removeClass('error success');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

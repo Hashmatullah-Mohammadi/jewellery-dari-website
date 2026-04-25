@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>سبد خرید - جواهرات توانا</title>
+
+    <!-- slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"
+    />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Poppins:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <!-- RTL support for Dari -->
+    <link href="css/dari-rtl.css" rel="stylesheet" />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/cart.css">
+   
+  </head>
+
+  <body>
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span> توانا </span>
+            <img src="images/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              class="d-flex ml-auto flex-column flex-lg-row align-items-center"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">صفحه اصلی</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> درباره ما</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="jewellery.html">طلاجات </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">تماس با ما</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">ورود</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="register.html">ثبت نام</a>
+                </li>
+              </ul>
+            </div>
+            <div class="quote_btn-container">
+              <a href="cart.html">
+                <img src="images/cart.png" alt="" />
+                <div class="cart_number">3</div>
+              </a>
+              <form class="form-inline">
+                <button
+                  class="btn my-2 my-sm-0 nav_search-btn"
+                  type="submit"
+                ></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- Cart Header -->
+    <div class="cart-header">
+      <div class="container">
+        <h1>
+          <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          سبد خرید شما
+        </h1>
+      </div>
+    </div>
+
+    <!-- Cart Container -->
+    <div class="cart-container">
+      <div class="cart-main">
+        <!-- Cart Items Section -->
+        <div class="cart-items-section">
+          <div id="cartItems">
+            <!-- Sample Cart Item 1 -->
+            <div class="cart-item" data-id="1" data-price="1200">
+              <div class="cart-item-image">
+                <img src="images/p-1.png" alt="انگشتر الماس" />
+              </div>
+              <div class="cart-item-details">
+                <div class="cart-item-title">انگشتر الماس طلایی</div>
+                <div class="cart-item-description">
+                  انگشتر زیبا با الماس اصلی و طلای ۱۸ عیار، مناسب برای مراسم خاص
+                </div>
+                <div class="cart-item-meta">
+                  <span><i class="fas fa-gem"></i> الماس</span>
+                  <span><i class="fas fa-weight"></i> ۵ گرم</span>
+                  <span><i class="fas fa-certificate"></i> گارانتی</span>
+                </div>
+              </div>
+              <div class="cart-item-controls">
+                <div class="quantity-control">
+                  <button class="quantity-btn minus">-</button>
+                  <input type="number" class="quantity-input" value="1" min="1" max="10">
+                  <button class="quantity-btn plus">+</button>
+                </div>
+                <div class="cart-item-price">$1,200</div>
+                <button class="remove-item">
+                  <i class="fas fa-trash"></i> حذف
+                </button>
+              </div>
+            </div>
+
+            <!-- Sample Cart Item 2 -->
+            <div class="cart-item" data-id="2" data-price="800">
+              <div class="cart-item-image">
+                <img src="images/i-2.png" alt="دستبند" />
+              </div>
+              <div class="cart-item-details">
+                <div class="cart-item-title">دستبند زنانه شیک</div>
+                <div class="cart-item-description">
+                  دستبند ظریف با طراحی مدرن، مناسب برای استفاده روزمره
+                </div>
+                <div class="cart-item-meta">
+                  <span><i class="fas fa-gem"></i> نقره</span>
+                  <span><i class="fas fa-weight"></i> ۳ گرم</span>
+                  <span><i class="fas fa-certificate"></i> گارانتی</span>
+                </div>
+              </div>
+              <div class="cart-item-controls">
+                <div class="quantity-control">
+                  <button class="quantity-btn minus">-</button>
+                  <input type="number" class="quantity-input" value="2" min="1" max="10">
+                  <button class="quantity-btn plus">+</button>
+                </div>
+                <div class="cart-item-price">$800</div>
+                <button class="remove-item">
+                  <i class="fas fa-trash"></i> حذف
+                </button>
+              </div>
+            </div>
+
+            <!-- Sample Cart Item 3 -->
+            <div class="cart-item" data-id="3" data-price="1500">
+              <div class="cart-item-image">
+                <img src="images/i-3.png" alt="گوشواره" />
+              </div>
+              <div class="cart-item-details">
+                <div class="cart-item-title">گوشواره آویز الماس</div>
+                <div class="cart-item-description">
+                  گوشواره لوکس با آویز الماس، براق و درخشان
+                </div>
+                <div class="cart-item-meta">
+                  <span><i class="fas fa-gem"></i> الماس</span>
+                  <span><i class="fas fa-weight"></i> ۴ گرم</span>
+                  <span><i class="fas fa-certificate"></i> گارانتی</span>
+                </div>
+              </div>
+              <div class="cart-item-controls">
+                <div class="quantity-control">
+                  <button class="quantity-btn minus">-</button>
+                  <input type="number" class="quantity-input" value="1" min="1" max="10">
+                  <button class="quantity-btn plus">+</button>
+                </div>
+                <div class="cart-item-price">$1,500</div>
+                <button class="remove-item">
+                  <i class="fas fa-trash"></i> حذف
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recommended Products -->
+          <div class="recommended-section">
+            <h3 class="recommended-title">محصولات پیشنهادی</h3>
+            <div class="recommended-products">
+              <div class="recommended-product">
+                <img src="images/i-1.png" alt="دستبند" class="recommended-product-image">
+                <div class="recommended-product-title">دستبند مردانه</div>
+                <div class="recommended-product-price">$600</div>
+                <button class="add-to-cart-btn">افزودن به سبد</button>
+              </div>
+              <div class="recommended-product">
+                <img src="images/p-1.png" alt="انگشتر" class="recommended-product-image">
+                <div class="recommended-product-title">انگشتر نقره</div>
+                <div class="recommended-product-price">$450</div>
+                <button class="add-to-cart-btn">افزودن به سبد</button>
+              </div>
+              <div class="recommended-product">
+                <img src="images/ring-img.jpg" alt="انگشتر عروسی" class="recommended-product-image">
+                <div class="recommended-product-title">انگشتر عروسی</div>
+                <div class="recommended-product-price">$2,500</div>
+                <button class="add-to-cart-btn">افزودن به سبد</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cart Sidebar -->
+        <div class="cart-sidebar">
+          <!-- Cart Summary -->
+          <div class="cart-summary">
+            <h3 class="summary-title">خلاصه سفارش</h3>
+            <div class="summary-row">
+              <span class="summary-label">مجموع کالاها</span>
+              <span class="summary-value" id="subtotal">$4,300</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-label">تخفیف</span>
+              <span class="summary-value" id="discount">-$0</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-label">هزینه ارسال</span>
+              <span class="summary-value" id="shipping">$25</span>
+            </div>
+            <div class="summary-row summary-total">
+              <span class="summary-label">مجموع کل</span>
+              <span class="summary-value" id="total">$4,325</span>
+            </div>
+          </div>
+
+          <!-- Coupon Section -->
+          <div class="coupon-section">
+            <h3 class="summary-title">کد تخفیف</h3>
+            <form class="coupon-form" id="couponForm">
+              <input 
+                type="text" 
+                class="coupon-input" 
+                placeholder="کد تخفیف را وارد کنید"
+                id="couponCode"
+              >
+              <button type="submit" class="apply-coupon-btn">اعمال</button>
+            </form>
+            <div id="couponMessage" style="margin-top: 10px; font-size: 14px;"></div>
+          </div>
+
+          <!-- Shipping Section -->
+          <div class="shipping-section">
+            <h3 class="summary-title">روش ارسال</h3>
+            <div class="shipping-option selected" data-price="25">
+              <input type="radio" name="shipping" value="express" checked>
+              <div class="shipping-info">
+                <div class="shipping-title">ارسال سریع</div>
+                <div class="shipping-description">تحویل ۲-۳ روز کاری</div>
+              </div>
+              <div class="shipping-price">$25</div>
+            </div>
+            <div class="shipping-option" data-price="10">
+              <input type="radio" name="shipping" value="standard">
+              <div class="shipping-info">
+                <div class="shipping-title">ارسال معمولی</div>
+                <div class="shipping-description">تحویل ۵-۷ روز کاری</div>
+              </div>
+              <div class="shipping-price">$10</div>
+            </div>
+            <div class="shipping-option" data-price="0">
+              <input type="radio" name="shipping" value="free">
+              <div class="shipping-info">
+                <div class="shipping-title">ارسال رایگان</div>
+                <div class="shipping-description">تحویل ۱۰-۱۴ روز کاری (بالای ۵۰۰۰$)</div>
+              </div>
+              <div class="shipping-price">رایگان</div>
+            </div>
+          </div>
+
+          <!-- Payment Section -->
+          <div class="payment-section">
+            <h3 class="summary-title">روش پرداخت</h3>
+            <div class="payment-methods">
+              <div class="payment-method selected" data-method="card">
+                <i class="fas fa-credit-card"></i>
+                <span>کارت اعتباری</span>
+              </div>
+              <div class="payment-method" data-method="paypal">
+                <i class="fab fa-paypal"></i>
+                <span>پی‌پال</span>
+              </div>
+              <div class="payment-method" data-method="cash">
+                <i class="fas fa-money-bill-wave"></i>
+                <span>پرداخت در محل</span>
+              </div>
+              <div class="payment-method" data-method="bank">
+                <i class="fas fa-university"></i>
+                <span>انتقال بانکی</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Checkout Button -->
+          <button class="checkout-btn" id="checkoutBtn">
+            <i class="fas fa-lock"></i> تکمیل خرید و پرداخت
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+    <script>
+      $(document).ready(function() {
+        // Cart state
+        let cartItems = [
+          { id: 1, name: 'انگشتر الماس طلایی', price: 1200, quantity: 1 },
+          { id: 2, name: 'دستبند زنانه شیک', price: 800, quantity: 2 },
+          { id: 3, name: 'گوشواره آویز الماس', price: 1500, quantity: 1 }
+        ];
+        
+        let discount = 0;
+        let shippingCost = 25;
+
+        // Update cart calculations
+        function updateCart() {
+          let subtotal = 0;
+          
+          cartItems.forEach(item => {
+            subtotal += item.price * item.quantity;
+          });
+          
+          const total = subtotal - discount + shippingCost;
+          
+          $('#subtotal').text('$' + subtotal.toLocaleString());
+          $('#discount').text('-$' + discount.toLocaleString());
+          $('#shipping').text(shippingCost === 0 ? 'رایگان' : '$' + shippingCost);
+          $('#total').text('$' + total.toLocaleString());
+        }
+
+        // Quantity controls
+        $('.quantity-btn.minus').on('click', function() {
+          const input = $(this).siblings('.quantity-input');
+          const currentValue = parseInt(input.val());
+          if (currentValue > 1) {
+            input.val(currentValue - 1);
+            updateItemQuantity($(this).closest('.cart-item'), currentValue - 1);
+          }
+        });
+
+        $('.quantity-btn.plus').on('click', function() {
+          const input = $(this).siblings('.quantity-input');
+          const currentValue = parseInt(input.val());
+          if (currentValue < 10) {
+            input.val(currentValue + 1);
+            updateItemQuantity($(this).closest('.cart-item'), currentValue + 1);
+          }
+        });
+
+        $('.quantity-input').on('change', function() {
+          const value = parseInt($(this).val());
+          if (value >= 1 && value <= 10) {
+            updateItemQuantity($(this).closest('.cart-item'), value);
+          } else {
+            $(this).val(1);
+          }
+        });
+
+        function updateItemQuantity(itemElement, quantity) {
+          const itemId = parseInt(itemElement.data('id'));
+          const item = cartItems.find(i => i.id === itemId);
+          if (item) {
+            item.quantity = quantity;
+            updateCart();
+            itemElement.addClass('pulse');
+            setTimeout(() => itemElement.removeClass('pulse'), 300);
+          }
+        }
+
+        // Remove item
+        $('.remove-item').on('click', function() {
+          const item = $(this).closest('.cart-item');
+          const itemId = parseInt(item.data('id'));
+          
+          if (confirm('آیا از حذف این محصول مطمئن هستید؟')) {
+            cartItems = cartItems.filter(i => i.id !== itemId);
+            item.fadeOut(300, function() {
+              $(this).remove();
+              updateCart();
+              checkEmptyCart();
+            });
+          }
+        });
+
+        // Coupon functionality
+        $('#couponForm').on('submit', function(e) {
+          e.preventDefault();
+          const couponCode = $('#couponCode').val().trim();
+          const messageDiv = $('#couponMessage');
+          
+          if (couponCode === 'TAVANA10') {
+            discount = Math.round(parseInt($('#subtotal').text().replace('$', '').replace(',', '')) * 0.1);
+            messageDiv.html('<span style="color: #27ae60;">کد تخفیف با موفقیت اعمال شد! ۱۰٪ تخفیف</span>');
+            $('#couponCode').prop('disabled', true);
+            $('.apply-coupon-btn').prop('disabled', true);
+          } else if (couponCode === 'NEW20') {
+            discount = Math.round(parseInt($('#subtotal').text().replace('$', '').replace(',', '')) * 0.2);
+            messageDiv.html('<span style="color: #27ae60;">کد تخفیف با موفقیت اعمال شد! ۲۰٪ تخفیف</span>');
+            $('#couponCode').prop('disabled', true);
+            $('.apply-coupon-btn').prop('disabled', true);
+          } else if (couponCode) {
+            messageDiv.html('<span style="color: #e74c3c;">کد تخفیف معتبر نیست</span>');
+          }
+          
+          updateCart();
+        });
+
+        // Shipping options
+        $('.shipping-option').on('click', function() {
+          $('.shipping-option').removeClass('selected');
+          $(this).addClass('selected');
+          $(this).find('input[type="radio"]').prop('checked', true);
+          
+          shippingCost = parseInt($(this).data('price'));
+          updateCart();
+        });
+
+        // Payment methods
+        $('.payment-method').on('click', function() {
+          $('.payment-method').removeClass('selected');
+          $(this).addClass('selected');
+        });
+
+        // Add to cart for recommended products
+        $('.add-to-cart-btn').on('click', function() {
+          const product = $(this).closest('.recommended-product');
+          const title = product.find('.recommended-product-title').text();
+          const priceText = product.find('.recommended-product-price').text();
+          const price = parseInt(priceText.replace('$', '').replace(',', ''));
+          
+          const newItem = {
+            id: Date.now(),
+            name: title,
+            price: price,
+            quantity: 1
+          };
+          
+          cartItems.push(newItem);
+          updateCart();
+          
+          $(this).text('✓ اضافه شد');
+          $(this).prop('disabled', true);
+          
+          setTimeout(() => {
+            $(this).text('افزودن به سبد');
+            $(this).prop('disabled', false);
+          }, 2000);
+        });
+
+        // Checkout
+        $('#checkoutBtn').on('click', function() {
+          const total = $('#total').text();
+          
+          $(this).html('<i class="fas fa-spinner fa-spin"></i> در حال پردازش...');
+          $(this).prop('disabled', true);
+          
+          setTimeout(() => {
+            alert(`پرداخت با موفقیت انجام شد! مبلغ کل: ${total}\nشما به صفحه تأیید سفارش هدایت می شوید.`);
+            // In real app, redirect to order confirmation page
+          }, 2000);
+        });
+
+        // Check if cart is empty
+        function checkEmptyCart() {
+          if (cartItems.length === 0) {
+            $('.cart-items-section').html(`
+              <div class="empty-cart">
+                <div class="empty-cart-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3 class="empty-cart-title">سبد خرید شما خالی است</h3>
+                <p class="empty-cart-description">
+                  به نظر می‌رسد هنوز محصولی به سبد خرید خود اضافه نکرده‌اید
+                </p>
+                <a href="index.html" class="continue-shopping-btn">
+                  <i class="fas fa-arrow-left"></i> ادامه خرید
+                </a>
+              </div>
+            `);
+            $('.cart-sidebar').hide();
+          }
+        }
+
+        // Initialize
+        updateCart();
+      });
+    </script>
+  </body>
+</html>

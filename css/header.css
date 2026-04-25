@@ -1,0 +1,47 @@
+
+      /* Sticky Header with Gold Background */
+      .header_section {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 1000 !important;
+        background: linear-gradient(135deg,#fb930a 3%, #f5e47b 32%,#fb930a 65% ) !important;
+        box-shadow: 0 4px 20px rgba(251, 147, 10, 0.3) !important;
+      }
+
+      /* Update navbar brand text for gold background */
+      .navbar-brand span {
+        color: white !important;
+        font-weight: 600 !important;
+      }
+      
+      /* Update navigation links for gold background */
+      .navbar-nav .nav-link {
+        color: white !important;
+        font-weight: 500 !important;
+        transition: all 0.3s ease !important;
+      }
+      
+      .navbar-nav .nav-link:hover {
+        color: #fffacd !important;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5) !important;
+      }
+      
+      .navbar-nav .nav-item.active .nav-link {
+        color: white !important;
+        font-weight: 600 !important;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.7) !important;
+      }
+      
+      /* Update cart icon for gold background */
+      .quote_btn-container a img {
+        filter: brightness(0) invert(1) !important;
+      }
+      
+      /* Update search button for gold background */
+      .nav_search-btn {
+        
+        color: #fb930a !important;
+      }
+   
